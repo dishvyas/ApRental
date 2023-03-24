@@ -1,8 +1,9 @@
 from django.shortcuts import render, HttpResponse
 
 @staticmethod
-def Home(self):
-    return HttpResponse("This is the Homepage!")
+def Home(request):
+    return render(request,'index.html')
+    # return HttpResponse("This is the Homepage!")
 
 
 def searchByF(self):
