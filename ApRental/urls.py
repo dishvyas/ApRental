@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 import rental
+from rental import views
+from ApRental import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', include('rental.urls')),
-]
+    path('<filename>.html', views.html),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
