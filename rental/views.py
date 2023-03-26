@@ -25,5 +25,5 @@ def searchByM(self):
 def dashboard(self):
     return HttpResponse("This is User Dashboard Page!")
 
-def calc(self):
-    return HttpResponse("This is Rent Calculator!")
+def calc(request):
+    return render(request, "rentCalc.html")

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% include "head_part.html" %}
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        {% include "sidebar_part.html" %}
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+            {% include "topbar_part.html" %}
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- style = "padding : 20px; border-radius: 5px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.2); background-color:beige; -->
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">Rent Affordability Calculator</h1>
+                    <br>
+                    <h6>This calculator shows rentals that fit your budget. Savings, debt and other expenses could impact the amount you want to spend on rent each month. Input your net (after tax) income and the calculator will display rentals up to 40% of your estimated gross gross income. Property managers typically use gross income to qualify applicants, so the the tool assumes your net income is taxed at 25%. Actual tax rates vary.</h6>
+                    <br>
+                    <form id = "rentC">
+
+                        <label id = "income" for="income">Monthly Income</label>
+                        <br>
+                        <input type="number" id="income" name="income" required>
+                        <br>
+                        <label id = "amount" for="rent">Monthly Rent</label>
+                        <br>
+                        <input type="number" id="rent" name="rent" required>
+                        <br><br>
+                        <button id ="calC" type="button" id="calculate">Calculate</button>
+                        <br>
+                        <p id="result"></p>
+                    </form>
+                    <br>
+                </div>
+                <!-- /.container-fluid -->
+                <br>
+                <div class="fact-box" style = "padding : 20px; border-radius: 5px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+                    <h1 class="h3 mb-4 text-gray-800">Random Facts about renting apartments</h1>
+                    <ul id = "facts">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Nullam vel neque at elit gravida sollicitudin eu vel mi.</li>
+                        <li>Donec sit amet turpis eu nisi tincidunt interdum.</li>
+                        <li>Vivamus dictum diam ut lectus maximus vestibulum.</li>
+                        <li>Pellentesque lobortis lorem vel ipsum malesuada, at lobortis felis aliquet.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End of Main Content -->
+
+          {% include "footer_part.html" %}
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    {% include "modals_and_scripts_part.html" %}
+
+</body>
+
+</html>
