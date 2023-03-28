@@ -29,21 +29,42 @@
                     <h6>This calculator shows rentals that fit your budget. Savings, debt and other expenses could impact the amount you want to spend on rent each month. Input your net (after tax) income and the calculator will display rentals up to 40% of your estimated gross gross income. Property managers typically use gross income to qualify applicants, so the the tool assumes your net income is taxed at 25%. Actual tax rates vary.</h6>
                     <br>
                     <form id = "rentC">
-
-                        <label id = "income" for="income">Monthly Income</label>
-                        <br>
-                        <input type="number" id="income" name="income" required>
-                        <br>
+                        <!-- <div style = "display: block;"> -->
+                        <div class="placeholder" data-placeholder="$">
+                        <label id = "inco" for="income">Monthly Income</label>
+                        <!-- <br> -->
+                        <input type="number" id="income" style="display: inline-block;" placeholder="$" name="income" required > 
+                        <!-- </div> -->
+                        <!-- <br> -->
+                        <!-- <div style = "display: block;"> -->
                         <label id = "amount" for="rent">Monthly Rent</label>
-                        <br>
-                        <input type="number" id="rent" name="rent" required>
+                        <!-- <br> -->
+                        <input type="number" id="rent" style="display: inline-block;" placeholder="$" name="rent" required> 
+                        <!-- </div> -->
+                        <!-- <div> -->
+                        <!-- <br> -->
+                        <label id = "expen" for="expense">Monthly Expenses</label>
+                        <!-- <br> -->
+                        <input type="number" id="expense" style="display: inline-block;" placeholder="$" name="expense" required >
+                        </div>
                         <br><br>
                         <button id ="calC" type="button" id="calculate">Calculate</button>
-                        <br>
                         <p id="result"></p>
                     </form>
                     <br>
                 </div>
+                <script>
+                    var button = document.getElementById("calC");
+                    var text = document.getElementById("result");
+                    
+                    button.addEventListener("click", function() 
+                    {
+                        document.getElementById("income").value = "";
+                        document.getElementById("rent").value = "";
+                        document.getElementById("expense").value = "";
+                        text.textContent = "The estimated rent based on your inputs is $dummy!";
+                    });
+                  </script>
                 <!-- /.container-fluid -->
                 <br>
                 <div class="fact-box" style = "padding : 20px; border-radius: 5px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">

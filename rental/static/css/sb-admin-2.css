@@ -11252,12 +11252,12 @@ body.sidebar-toggled footer.sticky-footer {
 } 
 
 #income {
-  display: block;
+  display: inline-block;
 	margin-bottom: 10px;
 }
 
 #amount {
-  display: block;
+  display: inline-block;
 	margin-bottom: 10px;
 }
 #calc {
