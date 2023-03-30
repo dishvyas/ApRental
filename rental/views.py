@@ -27,3 +27,6 @@ def dashboard(self):
 
 def calc(request):
     return render(request, "rentCalc.html")
+
+def login(request):
+    return render(request, "login.html")

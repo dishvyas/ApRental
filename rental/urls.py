@@ -10,4 +10,5 @@ urlpatterns = [
     path('searchbyMap/', views.searchByM ,name='map'),
     path('dashboard/', views.dashboard, name='dashboard'),
     path('calculator/', views.calc, name='calc'),
+    path('login/', views.login, name='login'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
