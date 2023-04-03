@@ -1,0 +1,268 @@
+/*  Font family*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+p,li,a,span,h1,h2,h3,h4,h5,h6,strong{
+  font-family: "Roboto" !important;
+}
+/*  Font Family */
+
+/*  header start */
+header {
+    background: #3a56c3;
+    padding: 30px 50px;
+    border-bottom: 1px solid #fff;
+}
+/*  Header end */
+
+/*  Banner start */
+/*  Banner end */
+
+/*  Section one start */
+section.sectionone {
+        background: #3A56C3;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 35px;
+    }
+        
+    h2.had1 {
+        font-size: 50px;
+        line-height: 60px;
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    h3.had1 {
+        font-size: 35px;
+        color: #fff;
+        line-height: 45px;
+        font-weight: 400;
+    }
+    .sectionone .box-1 {
+        background: #fff;
+        padding: 50px;
+        height: 413px;
+        margin-top: 30px;
+    }
+    
+    .sectionone .box-1 p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #707070;
+    }
+    
+    .sectionone ul {
+        background: #fff;
+        padding: 80px 0px 80px 50px!important;
+    }
+    
+    .sectionone ul li {
+         list-style: none;
+         position: relative;
+         margin-bottom: 30px;
+    }
+    
+    .sectionone ul li a {
+        font-size: 26px;
+        font-weight: 400;
+        color: #1A1A1A;
+        line-height: 36px;
+        text-decoration: none;
+    }
+    
+    .sectionone ul li:before {
+        position: absolute;
+        content: "";
+        background: url(../../assets/images/sectiononeimg2.png);
+        width: 25px;
+        height: 23px;
+        left: -19px;
+        top: 10px;
+        background-repeat: no-repeat;
+  }
+  .padding-class {
+    padding: 100px 0px;
+}
+.sectionone .min-box {
+    padding: 40px 0px 30px 0px;
+}
+.sectionone img {
+    margin-top: 20px;
+}
+/*  Section one end */
+
+
+/*  Section Two start */
+section.sectiontwo h5 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #2B2B2B;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+
+section.sectiontwo p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #707070;
+    line-height: 26px;
+}
+
+section.sectiontwo img {
+    width: 100%;
+}
+
+section.sectiontwo h5:before {
+    position: absolute;
+    content: "";
+    background: url(../../assets/images/sectiontwoimg1.png);
+    width: 118px;
+    height: 20px;
+    background-repeat: no-repeat;
+    top: 12px;
+    background-size: cover;
+}
+section.sectiontwo .boxs1 {
+    padding-top: 70px;
+}
+section.sectiontwo a.button {
+    padding: 15px 35px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 60px;
+    color: #fff;
+    background: #3a56c3;
+}
+
+/*  Section Two end */
+
+
+/*  Section Three start */
+/*  Section Three end */
+
+
+/*  Section Four start */
+/*  Section Four end */
+
+
+/*  Section Five start */
+/*  Section Five end */
+
+
+/*  Section Six start */
+/*  Section Six end */
+
+
+/*  Section Seven start */
+/*  Section Seven end */
+
+
+/*  Section 8 start */
+/*  Section 8 end */
+
+
+/*  Section 9 start */
+/*  Section 9 end */
+
+
+/*  Section Ten start */
+/*  Section Ten end */
+
+/*  Footer start */
+footer {
+    background: #3A56C3;
+    padding: 30px 0px !important;
+}
+
+footer p {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+/*  Footer end*/
+
+/*  Desktop Responsive */
+@media only screen and (max-width: 1660px) {
+  h2.had1 {
+      font-size: 35px;
+      line-height: 45px;
+  }
+  h3.had1 {
+      font-size: 25px;
+      line-height: 35px;
+  }
+  .sectionone .box-1 p {
+      font-size: 18px;
+      line-height: 24px;
+  }
+  .sectionone .box-1 {
+      padding: 30px;
+  }
+  .sectionone ul li a {
+      font-size: 16px;
+      line-height: 25px;
+  }
+  .sectionone ul {
+      background: #fff;
+      padding: 40px 0px 40px 40px!important;
+  }
+  .sectionone ul li:before {
+      width: 7px;
+      height: 12px;
+      left: -15px;
+      top: 6px;
+      background-size: cover;
+  }
+  .sectionone .min-box {
+      padding: 40px 0px 20px 0px;
+  }
+  section.sectiontwo p {
+      font-size: 16px;
+      line-height: 22px;
+  }
+  section.sectiontwo a.button {
+      padding: 14px 30px;
+      font-size: 16px;
+  }
+  section.sectiontwo h5 {
+      font-size: 22px;
+      line-height: 25px;
+  }
+  footer p {
+      font-size: 20px;
+  }
+  .sectionone .box-1 {
+      height: 307px;
+  }
+  section.sectionone {
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header {
+      padding: 30px 20px;
+  }
+}
+@media only screen and (max-width: 1520px) {}
+@media only screen and (max-width: 1440px) {}
+@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1326px) {}
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 1024px) {}
+
+/*  Desktop Responsive */
+
+/*  Mobile Responsive */
+@media only screen and (max-width: 999px) {}
+@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 420px) {}
+@media only screen and (max-width: 380px) {}
+
+/*  Mobile Responsive */
